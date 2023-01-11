@@ -11193,6 +11193,9 @@ p {
   overflow: hidden;
   height: 200px;
 }
+.portfolio-card.vertical-img {
+  height: 400px;
+}
 
 .portfolio-card .portfolio-card-img {
   width: 100%;
