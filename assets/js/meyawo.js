@@ -36,3 +36,18 @@ $('#nav-toggle').click(function(){
     $(this).toggleClass('is-active')
     $('ul.nav').toggleClass('show');
 });
+
+// like handle
+function likeHanlde(event) {
+    let isLiked = event.childNodes[0].style.color == 'rgb(236, 24, 93)';
+    countLike = Number(event.childNodes[1].nodeValue);
+    if (!isLiked) {
+        event.childNodes[0].style.color='#ec185d';
+        countLike++;
+        event.childNodes[1].nodeValue = ' ' + countLike;
+    } else {
+        event.childNodes[0].style.color='#000000';
+        countLike--;
+        event.childNodes[1].nodeValue = ' ' + countLike;
+    }
+}
