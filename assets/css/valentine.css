@@ -33,6 +33,8 @@
     .card > h1 {
       font-family: Solitreo;
       font-size: 1em;
+      text-align: left;
+      color:black;
     }
   
   .message {
@@ -156,5 +158,14 @@
   @keyframes slide-rev {
     from {
       transform: translatey(-15vmin);
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .card > h1 {
+      font-size: 0.8em;
+    }
+    .heart {
+      top: 10vmin!important;
     }
   }
