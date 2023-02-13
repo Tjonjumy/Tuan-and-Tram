@@ -30,3 +30,9 @@ body {
       transform: translateY(101vh);
     }
   }
+
+  @media screen and (max-width: 600px) {
+    .label-location {
+      font-size: 11px;
+    }
+  }
